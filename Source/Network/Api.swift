@@ -5,11 +5,12 @@
 //  Created by demothreen on 25.02.2022.
 //
 
-import Foundation
+import UIKit
+import Alamofire
 
 class Api {
   static let shared = Api()
-  let token = Bundle.main.object(forInfoDictionaryKey: "API_KEY")
+  private let token = Bundle.main.object(forInfoDictionaryKey: "API_KEY")
 
 
 }
