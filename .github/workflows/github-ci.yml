@@ -3,7 +3,7 @@
 name: CI
 
 env:
-  DEVICE: "iPhone Xʀ"
+  DEVICE: "iPhone 8"
 
 on:
   push:
