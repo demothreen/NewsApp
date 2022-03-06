@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		186843EC8579C780E152B079 /* Pods_NewsApp_NewsAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8DA29BE7D0DDD889769C5D5 /* Pods_NewsApp_NewsAppUITests.framework */; };
 		275F60B32568C3F1A0512D12 /* Pods_NewsAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD08956D741C208F5258F3DD /* Pods_NewsAppTests.framework */; };
+		4A2596E427D54020003F7BB3 /* MainVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2596E327D54020003F7BB3 /* MainVM.swift */; };
+		4A2596E727D54169003F7BB3 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2596E627D54169003F7BB3 /* News.swift */; };
 		4A2CCB6727C94D4700D13DEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2CCB6627C94D4700D13DEA /* AppDelegate.swift */; };
 		4A2CCB6927C94D4700D13DEA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2CCB6827C94D4700D13DEA /* SceneDelegate.swift */; };
 		4A2CCB7027C94D4700D13DEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A2CCB6F27C94D4700D13DEA /* Assets.xcassets */; };
@@ -41,6 +43,8 @@
 
 /* Begin PBXFileReference section */
 		37E8049089C63D3AC46C9ADC /* Pods_NewsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NewsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A2596E327D54020003F7BB3 /* MainVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVM.swift; sourceTree = "<group>"; };
+		4A2596E627D54169003F7BB3 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 		4A2CCB6327C94D4700D13DEA /* NewsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A2CCB6627C94D4700D13DEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A2CCB6827C94D4700D13DEA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +97,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A2596E527D54156003F7BB3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4A2596E627D54169003F7BB3 /* News.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		4A2CCB5A27C94D4700D13DEA = {
 			isa = PBXGroup;
 			children = (
@@ -157,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				4A2CCB9A27C94E0200D13DEA /* MainVC.swift */,
+				4A2596E327D54020003F7BB3 /* MainVM.swift */,
 			);
 			path = MainScreen;
 			sourceTree = "<group>";
@@ -172,6 +185,7 @@
 		4A2CCBBB27C94EEA00D13DEA /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				4A2596E527D54156003F7BB3 /* Models */,
 				4A2CCBBC27C94FAE00D13DEA /* Network */,
 				4A2CCB9C27C94E7900D13DEA /* Resources */,
 				4A2CCB9627C94DC000D13DEA /* Screens */,
@@ -197,7 +211,6 @@
 				7FFE41321038ED546E7A25A8 /* Pods-NewsAppTests.debug.xcconfig */,
 				D086C861D1E50542F3227EED /* Pods-NewsAppTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -450,7 +463,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A2596E727D54169003F7BB3 /* News.swift in Sources */,
 				4A2CCB9B27C94E0200D13DEA /* MainVC.swift in Sources */,
+				4A2596E427D54020003F7BB3 /* MainVM.swift in Sources */,
 				4A2CCB6727C94D4700D13DEA /* AppDelegate.swift in Sources */,
 				4A2CCBBF27C950EB00D13DEA /* Api.swift in Sources */,
 				4A2CCB6927C94D4700D13DEA /* SceneDelegate.swift in Sources */,
@@ -627,7 +642,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = KL63K8TBN2;
+				DEVELOPMENT_TEAM = 967NAX245W;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NewsApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -656,7 +671,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = KL63K8TBN2;
+				DEVELOPMENT_TEAM = 967NAX245W;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NewsApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

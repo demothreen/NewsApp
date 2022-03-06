@@ -8,10 +8,12 @@
 import UIKit
 
 class MainVC: UIViewController {
+  private var mainVM: MainVM = MainVM()
 
   override func viewDidLoad() {
     super.viewDidLoad()
     view.backgroundColor = .white
+    mainVM.getAppleNews()
   }
 
 }
