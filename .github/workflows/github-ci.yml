@@ -1,0 +1,45 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+env:
+  DEVICE: "iPhone Xʀ"
+
+on:
+  push:
+  schedule:
+    - cron: "0 13 * * 1/4"
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  build:
+    name: Build
+    concurrency:
+      group: ${{ github.ref }}
+      cancel-in-progress: true
+    runs-on: macos-latest
+    steps:
+      - name: Run a one-line script
+        run: echo Start building
+      - name: Git clone my repo
+        uses: actions/checkout@v2
+      - name: Build app
+        run: |
+          set -o pipefail && xcodebuild clean -scheme "NewsApp" -destination "platform=iOS Simulator,name=$DEVICE,OS=15.2" -quiet
+  ui_test:
+    name: UI test
+    concurrency:
+      group: ${{ github.ref }}
+      cancel-in-progress: true
+    env:
+      UI_TEST_TARGET: "NewsAppUITests"
+    runs-on: macos-latest
+    needs: build
+    steps:
+    - name: Run UI tests
+      run: |
+        set -o pipefail && xcodebuild test -scheme "NewsApp" -destination "platform=iOS Simulator,name=$DEVICE,OS=15.2" -quiet
+
