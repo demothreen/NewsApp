@@ -15,5 +15,4 @@ class MainVC: UIViewController {
     view.backgroundColor = .white
     mainVM.getAppleNews()
   }
-
 }
