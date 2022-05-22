@@ -1,0 +1,46 @@
+name: NewsApp
+options:
+  minimumXcodeGenVersion: 2.3.0
+  deploymentTarget:
+    iOS: 15.0
+  groupSortPosition: top
+  developmentLanguage: ru
+packages:
+  Alamofire:
+    url: https://github.com/Alamofire/Alamofire
+    majorVersion: 5.5.0
+  Swinject:
+    url: https://github.com/Swinject/Swinject
+    majorVersion: 2.8.1
+  SwinjectAutoregistration:
+    url: https://github.com/Swinject/SwinjectAutoregistration
+    majorVersion: 2.8.1
+settings:
+  base:
+    SWIFT_VERSION: 5.0
+    TARGETED_DEVICE_FAMILY: 1
+targets:
+  NewsApp:
+    type: application
+    platform: iOS
+    deploymentTarget: 10.0
+    dependencies:
+      - package: Alamofire
+      - package: Swinject
+      - package: SwinjectAutoregistration
+    sources:
+      - path: Source
+    settings:
+      base:
+        ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES: $(inherited)
+        CODE_SIGN_IDENTITY: iPhone Developer
+        CODE_SIGN_STYLE: Automatic
+        DEVELOPMENT_TEAM: 967NAX245W
+        DEFINES_MODULE: YES
+        INFOPLIST_FILE: Supporting Files/Info.plist
+        PRODUCT_BUNDLE_IDENTIFIER: com.demothreen.NewsApp
+        TARGETED_DEVICE_FAMILY: 1
+        XCODEGEN_STATE: YES
+    scheme:
+      environmentVariables:
+        DYLD_PRINT_STATISTICS: 1
