@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		4A076A7B283A96B2005CE737 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 4A076A7A283A96B2005CE737 /* Swinject */; };
 		4A076A7E283A96C5005CE737 /* SwinjectAutoregistration in Frameworks */ = {isa = PBXBuildFile; productRef = 4A076A7D283A96C5005CE737 /* SwinjectAutoregistration */; };
+		4A076A81283A96EA005CE737 /* MainContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A076A80283A96EA005CE737 /* MainContainer.swift */; };
+		4A076A84283A9714005CE737 /* MainAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A076A83283A9714005CE737 /* MainAssembly.swift */; };
+		4A076A87283A9779005CE737 /* AppAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A076A86283A9779005CE737 /* AppAssembly.swift */; };
 		4A2596E427D54020003F7BB3 /* MainVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2596E327D54020003F7BB3 /* MainVM.swift */; };
 		4A2596E727D54169003F7BB3 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2596E627D54169003F7BB3 /* News.swift */; };
 		4A2CCB6727C94D4700D13DEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2CCB6627C94D4700D13DEA /* AppDelegate.swift */; };
@@ -34,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4A076A80283A96EA005CE737 /* MainContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContainer.swift; sourceTree = "<group>"; };
+		4A076A83283A9714005CE737 /* MainAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAssembly.swift; sourceTree = "<group>"; };
+		4A076A86283A9779005CE737 /* AppAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAssembly.swift; sourceTree = "<group>"; };
 		4A2596E327D54020003F7BB3 /* MainVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVM.swift; sourceTree = "<group>"; };
 		4A2596E627D54169003F7BB3 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 		4A2CCB6327C94D4700D13DEA /* NewsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,6 +77,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A076A7F283A96DB005CE737 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				4A076A85283A9769005CE737 /* Common */,
+				4A076A82283A970B005CE737 /* Screens */,
+				4A076A80283A96EA005CE737 /* MainContainer.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		4A076A82283A970B005CE737 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				4A076A83283A9714005CE737 /* MainAssembly.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		4A076A85283A9769005CE737 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				4A076A86283A9779005CE737 /* AppAssembly.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		4A2596E527D54156003F7BB3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -147,6 +179,7 @@
 		4A2CCBBB27C94EEA00D13DEA /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				4A076A7F283A96DB005CE737 /* DI */,
 				4A2596E527D54156003F7BB3 /* Models */,
 				4A2CCBBC27C94FAE00D13DEA /* Network */,
 				4A2CCB9C27C94E7900D13DEA /* Resources */,
@@ -274,8 +307,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A076A87283A9779005CE737 /* AppAssembly.swift in Sources */,
 				4A2596E727D54169003F7BB3 /* News.swift in Sources */,
 				4A2CCB9B27C94E0200D13DEA /* MainVC.swift in Sources */,
+				4A076A84283A9714005CE737 /* MainAssembly.swift in Sources */,
+				4A076A81283A96EA005CE737 /* MainContainer.swift in Sources */,
 				4A2596E427D54020003F7BB3 /* MainVM.swift in Sources */,
 				4A2CCB6727C94D4700D13DEA /* AppDelegate.swift in Sources */,
 				4A2CCBBF27C950EB00D13DEA /* Api.swift in Sources */,

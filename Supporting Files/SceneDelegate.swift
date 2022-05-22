@@ -14,7 +14,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     guard let windowScene = (scene as? UIWindowScene) else { return }
     window = UIWindow(frame: windowScene.coordinateSpace.bounds)
     window?.windowScene = windowScene
-    window?.rootViewController = UINavigationController(rootViewController: MainVC())
+    window?.rootViewController = UINavigationController(rootViewController: MainContainer.resolve(MainVC.self))
     window?.makeKeyAndVisible()
   }
 }

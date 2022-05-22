@@ -8,9 +8,14 @@
 import Foundation
 
 class MainVM {
+  private var api: Api
+
+  init(api: Api) {
+    self.api = api
+  }
 
   func getAppleNews() {
-    Api.shared.fetchAppleNews { news, err in
+    api.fetchAppleNews { news, err in
       print("### news author", news?.articles[0].author)
     }
   }
