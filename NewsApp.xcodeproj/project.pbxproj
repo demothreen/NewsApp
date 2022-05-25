@@ -22,7 +22,6 @@
 		4A2CCB8A27C94D4800D13DEA /* NewsAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2CCB8927C94D4800D13DEA /* NewsAppUITestsLaunchTests.swift */; };
 		4A2CCB9B27C94E0200D13DEA /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2CCB9A27C94E0200D13DEA /* MainVC.swift */; };
 		4A2CCBBF27C950EB00D13DEA /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2CCBBE27C950EB00D13DEA /* Api.swift */; };
-		4A2CCBC127C9537600D13DEA /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 4A2CCBC027C9537600D13DEA /* Config.xcconfig */; };
 		4ACAD6A0283A931600DB25A5 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 4ACAD69F283A931600DB25A5 /* Alamofire */; };
 /* End PBXBuildFile section */
 
@@ -53,7 +52,7 @@
 		4A2CCB8927C94D4800D13DEA /* NewsAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		4A2CCB9A27C94E0200D13DEA /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		4A2CCBBE27C950EB00D13DEA /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
-		4A2CCBC027C9537600D13DEA /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		4A774877283EAD2600812886 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,7 +113,7 @@
 		4A2CCB5A27C94D4700D13DEA = {
 			isa = PBXGroup;
 			children = (
-				4A2CCBC027C9537600D13DEA /* Config.xcconfig */,
+				4A774877283EAD2600812886 /* Config.xcconfig */,
 				4A2CCBBB27C94EEA00D13DEA /* Source */,
 				4A2CCB6527C94D4700D13DEA /* Supporting Files */,
 				4A2CCB8627C94D4800D13DEA /* NewsAppUITests */,
@@ -288,7 +287,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A2CCB7327C94D4700D13DEA /* LaunchScreen.storyboard in Resources */,
-				4A2CCBC127C9537600D13DEA /* Config.xcconfig in Resources */,
 				4A2CCB7027C94D4700D13DEA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -352,7 +350,6 @@
 /* Begin XCBuildConfiguration section */
 		4A2CCB8B27C94D4800D13DEA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4A2CCBC027C9537600D13DEA /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -414,7 +411,6 @@
 		};
 		4A2CCB8C27C94D4800D13DEA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4A2CCBC027C9537600D13DEA /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
