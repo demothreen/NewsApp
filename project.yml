@@ -4,7 +4,7 @@ options:
   deploymentTarget:
     iOS: 15.0
   developmentLanguage: ru
-  
+  groupSortPosition: top
 packages:
   Alamofire:
     url: https://github.com/Alamofire/Alamofire
@@ -21,11 +21,16 @@ settings:
     TARGETED_DEVICE_FAMILY: 1
 configFiles:
   Debug: Config.xcconfig
+  Release: Config.xcconfig
 targets:
   NewsApp:
+    configFiles:
+      Debug: Config.xcconfig
+      Release: Config.xcconfig
     info:
       path: Supporting Files/Info.plist
       properties:
+        API_KEY: $(API_KEY)
         UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait]
         UILaunchStoryboardName: LaunchScreen
         UIApplicationSceneManifest:
